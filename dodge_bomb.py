@@ -33,8 +33,8 @@ def gameover(screen: pg.Surface) -> None:
     """
     ゲームオーバー時に,半透明の黒い画面上に「Game Over」と表示し,
     泣いているこうかとん画像を貼り付ける関数
-    引数：
-    戻り値：
+    引数： screen (pg.Surface): 描画先の画面 Surface。
+    戻り値：None: 値は返さない。画面に描画するだけ。
     """
     kknaki_img = pg.transform.rotozoom(pg.image.load("fig/8.png"), 0, 1.0)
     kknaki_rct = kknaki_img.get_rect()
